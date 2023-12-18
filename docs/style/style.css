@@ -1,0 +1,238 @@
+@font-face {
+	font-family: "SUIT-Regular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+		format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html > body {
+	color: #343434;
+	font-family: "SUIT";
+	font-size: 16px;
+	font-weight: 500;
+	word-break: break-all;
+	background-color: #fff;
+}
+
+/* 라이브러리 */
+:root {
+	--site-width: 1280px;
+}
+
+.tit {
+	font-weight: 700;
+}
+
+#wrap {
+	margin: 0 auto;
+	max-width: var(--site-width);
+}
+
+.logo {
+	width: 100%;
+}
+
+/* section-1 */
+.main-img {
+	margin-top: -150px;
+	position: relative;
+}
+
+.main-img > .link {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #212121;
+	color: #eaeaea;
+	padding: 10px 20px;
+	opacity: 0;
+	transition: all .5s;
+}
+
+.main-img:hover > .link {
+	opacity: 1;
+}
+
+.main-img > .link:hover {
+	background-color: #eaeaea;
+	color: #212121;
+}
+
+.main-img > img {
+	width: 100%;
+}
+
+.project-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -50px;
+	margin-bottom: 100px;
+}
+
+.project-info > div {
+	display: flex;
+}
+
+.project-info .tit {
+	margin-right: 10px;
+}
+
+/* section-2 */
+.section-2 .tit {
+	font-size: 24px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+.section-2 .cont {
+	padding-top: 10px;
+}
+
+.section-2 > .content {
+	padding: 30px 0;
+}
+
+.solution, .design {
+	display: flex;
+}
+
+.solution > div,
+.design > div {
+	width: 50%;
+}
+
+.solution .cont > p {
+	height: 50px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.as-is > .cont > p::after {
+	content: ">";
+	position: absolute;
+	right: 40px;
+	font-weight: 700;
+}
+
+.concept {
+	padding-right: 35px;
+}
+
+.concept > .cont > .flex {
+	justify-content: space-between;
+}
+
+.concept > .cont .tit,
+.system > .cont .tit {
+	border-bottom: 0;
+}
+
+.system > .cont > p:nth-child(2) {
+	padding-bottom: 20px;
+}
+
+.system > .cont > .color {
+	display: flex;
+	justify-content: space-between;
+}
+
+.system > .cont > .color > div {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.system > .cont > .color .circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.system .color-1 {
+	background-color: #eaeaea;
+}
+
+.system .color-2 {
+	background-color: #343434;
+}
+
+.system .color-3 {
+	background-color: #212121;
+}
+
+/* section-3~8 공통 css */
+.page > .tit, 
+.main-page > .tit {
+	font-size: 24px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+/* section-3 */
+.page-design {
+	padding: 100px 0;
+}
+
+.main-page > .cont {
+	display: flex;
+}
+
+.main-page > .cont > .img {
+	width: 60%;
+}
+
+.main-page > .cont > .img > img {
+	width: 100%;
+}
+
+.main-page > .cont > .info {
+	width: 40%;
+	margin-left: 20px;
+}
+
+.main-page > .cont > .info > .info-section {
+	border-bottom: 1px solid black;
+}
+
+.main-page > .cont > .info > .info-1 {
+	height: 100px;
+}
+
+.main-page > .cont > .info > .info-2 {
+	height: 330px;
+	padding: 140px 0;
+}
+
+.main-page > .cont > .info > .info-3 {
+	height: 250px;
+	padding: 100px 0;
+}
+
+.main-page > .cont > .info > .info-4 {
+	height: 970px;
+	padding: 400px 0;
+}
+
+.main-page > .cont > .info > .info-5 {
+	height: 710px;
+	padding: 300px 0;
+}
+
+.main-page > .cont > .info > .info-6 {
+	height: 230px;
+	padding: 100px 0;
+}
+
+/* section-4 ~ section-8 */
+.page > .cont > .info {
+	margin-bottom: 20px;
+}
+
+.page > .cont > .img > img {
+	margin: 0 auto;
+	width: 70%;
+}
+
